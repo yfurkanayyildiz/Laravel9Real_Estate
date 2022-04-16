@@ -7,10 +7,8 @@
 <body>
 
 <h1>This is Test parameters</h1>
-Id Value : {{$id}}
+First Name : {{$fname}}
 <br>
-Number Value: {{$number}}
-<br>
-Sum Params :{{$id + $number}}
+Last Name : {{$lname}}
 </body>
 </html>

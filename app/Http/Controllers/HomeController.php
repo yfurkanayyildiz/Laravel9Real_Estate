@@ -9,7 +9,7 @@ class HomeController extends Controller
     //
     public function index()
     {
-        echo "Index Function";
+        return view('home.index');
     }
 
     public function test()
@@ -34,10 +34,10 @@ class HomeController extends Controller
         //echo "Save Function<br>";
         //echo "Last Name :", $_REQUEST["fname"];
         //echo "<br>Last Name :", $_REQUEST["lname"];
-        //return view('home.test2',
+        return view('home.test3',
             [
                 'fname'=> $_REQUEST["fname"],
                 'lname'=>$_REQUEST["lname"]
-            ];
+            ]);
     }
 }
