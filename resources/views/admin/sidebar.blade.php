@@ -11,7 +11,7 @@
                         <img src="{{asset('assets')}}/admin/img/user.jpg" alt="">
                     </div>
                     <div class="user-info">
-                        <div>Jonny <strong>Deen</strong></div>
+                        <div>Yusuf Furkan<strong>Ayyıldız</strong></div>
                         <div class="user-text-online">
                             <span class="user-circle-online btn btn-success btn-circle "></span>&nbsp;Online
                         </div>
@@ -31,90 +31,64 @@
                 </div>
                 <!--end search section-->
             </li>
+            <li>
             <li class="">
-                <a href="index.html"><i class="fa fa-dashboard fa-fw"></i>Dashboard</a>
+                <a href="/admin"><i class="fa fa-home fa-fw" style="color: white"></i>Dashboard</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Charts<span class="fa arrow"></span></a>
+                <a href="#"><i class="fa fa-dropbox fa-fw " style="color: blue" ></i></i>Orders<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="flot.html">Flot Charts</a>
+                        <a href="flot.html">New Orders Charts</a>
                     </li>
                     <li>
-                        <a href="morris.html">Morris Charts</a>
+                        <a href="morris.html">Accepted Orders Charts</a>
+                    </li>
+                    <li>
+                        <a href="morris.html">Shipping Orders Charts</a>
+                    </li>
+                    <li>
+                        <a href="morris.html">Completed Orders Charts</a>
                     </li>
                 </ul>
+
+            <li class="">
+                <a href="/admin/category"><i class="fa fa-bars fa-fw" style="color: yellow"></i>Categories</a>
+            </li>
+            <li class="">
+                <a href="/admin/product"><i class="fa fa-bars fa-fw"></i>Product</a>
+            </li>
+            <li class="">
+                <a href="/admin/comment"><i class="fa fa-comment fa-fw"></i>Comment</a>
+            </li>
+            <li class="">
+                <a href="/admin/faq"><i class="fa fa-question fa-fw"></i>FAQ</a>
+            </li>
+            <li class="">
+                <a href="/admin/messages"><i class="fa fa-envelope-o fa-fw"></i>Messages</a>
+            </li>
+            <li class="">
+                <a href="/admin/messages"><i class="fa fa-user fa-fw" style="color: green"></i>user</a>
+            </li>
+            <li class="">
+                <a href="/admin/social"><i class="fa fa-bars fa-fw"></i>Social</a>
+            </li>
+
+            <li class="">
+                <h4 style="color:white;">&nbsp&nbsp LABELS</h4>
+            </li>
+            <li class="">
+                <a href="/admin/settings"><i class="fa fa-cog fa-fw"></i>settings</a>
+            </li>
+            <li class="">
+                <a href="/admin/social"><i class="fa fa-bars fa-fw"></i>Social</a>
+            </li>
+            <li class=""></li>
+
+
                 <!-- second-level-items -->
             </li>
             <li>
-                <a href="timeline.html"><i class="fa fa-flask fa-fw"></i>Timeline</a>
-            </li>
-            <li>
-                <a href="tables.html"><i class="fa fa-table fa-fw"></i>Tables</a>
-            </li>
-            <li>
-                <a href="forms.html"><i class="fa fa-edit fa-fw"></i>Forms</a>
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-wrench fa-fw"></i>UI Elements<span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li>
-                        <a href="panels-wells.html">Panels and Wells</a>
-                    </li>
-                    <li>
-                        <a href="buttons.html">Buttons</a>
-                    </li>
-                    <li>
-                        <a href="notifications.html">Notifications</a>
-                    </li>
-                    <li>
-                        <a href="typography.html">Typography</a>
-                    </li>
-                    <li>
-                        <a href="grid.html">Grid</a>
-                    </li>
-                </ul>
-                <!-- second-level-items -->
-            </li>
-            <li>
-                <a href="#"><i class="fa fa-sitemap fa-fw"></i>Multi-Level Dropdown<span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li>
-                        <a href="#">Second Level Item</a>
-                    </li>
-                    <li>
-                        <a href="#">Second Level Item</a>
-                    </li>
-                    <li>
-                        <a href="#">Third Level <span class="fa arrow"></span></a>
-                        <ul class="nav nav-third-level">
-                            <li>
-                                <a href="#">Third Level Item</a>
-                            </li>
-                            <li>
-                                <a href="#">Third Level Item</a>
-                            </li>
-                            <li>
-                                <a href="#">Third Level Item</a>
-                            </li>
-                            <li>
-                                <a href="#">Third Level Item</a>
-                            </li>
-                        </ul>
-                        <!-- third-level-items -->
-                    </li>
-                </ul>
-                <!-- second-level-items -->
-            </li>
-            <li class="active">
-                <a href="#"><i class="fa fa-files-o fa-fw"></i>Sample Pages<span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li class="selected">
-                        <a href="blank.html">Blank Page</a>
-                    </li>
-                    <li>
-                        <a href="login.html">Login Page</a>
-                    </li>
                 </ul>
                 <!-- second-level-items -->
             </li>

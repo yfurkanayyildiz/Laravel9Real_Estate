@@ -6,10 +6,11 @@
     <!--  page-wrapper -->
     <div id="page-wrapper">
 
-        <div class="row">
+        <div class="row mb-2">
             <!-- Page Header -->
+            <br><br>
             <div class="col-lg-12">
-                <h1 class="page-header">Category List</h1>
+                <a href="/admin/category/create" class="btn btn-success" style="width:200px">Add Catagory</a>
             </div>
             <!--End Page Header -->
         </div>
