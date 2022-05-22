@@ -33,7 +33,7 @@
             </li>
             <li>
             <li class="">
-                <a href="/admin"><i class="fa fa-home fa-fw" style="color: white"></i>Dashboard</a>
+                <a href="/admin"><i class="fa fa-home fa-fw" style="color: yellow"></i>Dashboard</a>
             </li>
             <li>
                 <a href="#"><i class="fa fa-dropbox fa-fw " style="color: blue" ></i></i>Orders<span class="fa arrow"></span></a>
