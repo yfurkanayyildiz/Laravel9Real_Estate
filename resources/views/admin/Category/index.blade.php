@@ -65,9 +65,9 @@
                                     <td>{{$rs->description}}</td>
                                     <td>{{$rs->image}}</td>
                                     <td>{{$rs->status}}</td>
-                                    <td><a href="/admin/category/edit{{$rs->id}}" class="btn btn-info btn-sm">Edit</a></td>
-                                    <td><a href="/admin/category/delete{{$rs->id}}" class="btn btn-danger btn-sm">Delete</a></td>
-                                    <td><a href="/admin/category/show{{$rs->id}}" class="btn btn-success btn-sm">Show</a></td>
+                                    <td><a href="/admin/category/edit/{{$rs->id}}" class="btn btn-info btn-sm">Edit</a></td>
+                                    <td><a href="/admin/category/delete/{{$rs->id}}" class="btn btn-danger btn-sm">Delete</a></td>
+                                    <td><a href="/admin/category/show/{{$rs->id}}" class="btn btn-success btn-sm">Show</a></td>
                                 </tr>
                                 <button type="button" class="btn btn-primary btn-sm">Small button</button>
                                 @endforeach

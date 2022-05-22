@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootsrtap Free Admin Template - SIMINTA | Admin Dashboad Template</title>
+    <title>@yield('title')</title>
     <!-- Core CSS - Include with every page -->
     <link href="{{asset('assets')}}/admin/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
     <link href="{{asset('assets')}}/admin/font-awesome/css/font-awesome.css" rel="stylesheet" />
