@@ -10,7 +10,7 @@
             <!-- Page Header -->
             <br><br>
             <div class="col-lg-12">
-                <a href="/admin/category/create" class="btn btn-success" style="width:200px">Add Catagory</a>
+                <a href="{{route('admin.category.create')}}" class="btn btn-success" style="width:200px">Add Catagory</a>
             </div>
             <!--End Page Header -->
         </div>
@@ -25,14 +25,14 @@
                             <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu pull-right" role="menu">
-                            <li><a href="/admin">Action</a>
+                            <li><a href="{{route('admin.index')}}">Action</a>
                             </li>
-                            <li><a href="/admin">Another action</a>
+                            <li><a href="{{route('admin.index')}}">Another action</a>
                             </li>
-                            <li><a href="/admin">Something else here</a>
+                            <li><a href="{{route('admin.index')}}">Something else here</a>
                             </li>
                             <li class="divider"></li>
-                            <li><a href="admin">Separated link</a>
+                            <li><a href="{{route('admin.index')}}">Separated link</a>
                             </li>
                         </ul>
                     </div>
@@ -66,10 +66,10 @@
                                     <td>{{$rs->description}}</td>
                                     <td>{{$rs->image}}</td>
                                     <td>{{$rs->status}}</td>
-                                    <td><a href="/admin/category/edit/{{$rs->id}}" class="btn btn-info btn-sm">Edit</a></td>
-                                    <td><a href="/admin/category/destroy/{{$rs->id}}" class="btn btn-danger btn-sm"
+                                    <td><a href="{{route('admin.category.edit',['id'=>$rs->id])}}" class="btn btn-info btn-sm">Edit</a></td>
+                                    <td><a href="{{route('admin.category.destroy',['id'=>$rs->id])}}" class="btn btn-danger btn-sm"
                                             onclick="return confirm('Delete !! Are You Sure?')">Delete</a></td>
-                                    <td><a href="/admin/category/show/{{$rs->id}}" class="btn btn-success btn-sm">Show</a></td>
+                                    <td><a href="{{route('admin.category.show',['id'=>$rs->id])}}" class="btn btn-success btn-sm">Show</a></td>
                                 </tr>
                                 <button type="button" class="btn btn-primary btn-sm">Small button</button>
                                 @endforeach

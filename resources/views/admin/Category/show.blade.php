@@ -10,12 +10,12 @@
             <!-- Page Header -->
             <div class="col-sm-3">
                 <br><br>
-                <a href="/admin/category/edit/{{$data->id}}" class="btn btn-primary btn-sm" style="width: 250px">Edit</a>
+                <a href="{{route('admin.category.edit',['id'=>$data->id])}}" class="btn btn-primary btn-sm" style="width: 250px">Edit</a>
 
             </div>
             <div class="col-sm-3">
                 <br><br>
-                <a href="/admin/category/destroy/{{$data->id}}" onclick="return confirm('Delete !! Are You Sure?')" class="btn btn-danger btn-sm" style="width: 250px">Delete</a>
+                <a href="{{route('admin.category.destroy',['id'=>$data->id])}}" onclick="return confirm('Delete !! Are You Sure?')" class="btn btn-danger btn-sm" style="width: 250px">Delete</a>
 
             </div>
             <!--End Page Header -->
