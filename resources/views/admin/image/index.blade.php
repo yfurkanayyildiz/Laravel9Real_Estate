@@ -1,23 +1,38 @@
-@extends('layouts.adminbase')
+@extends('layouts.adminwindow')
 
-@section('title', 'Category List')
+@section('title', 'Product Image Gallery')
 
 @section('content')
+    <h3>{{$product->title}}</h3>
+    <hr>
     <!--  page-wrapper -->
-    <div id="page-wrapper">
-
-        <div class="row mb-2">
-            <!-- Page Header -->
-            <br><br>
-            <div class="col-lg-12">
-                <a href="{{route('admin.category.create')}}" class="btn btn-success" style="width:200px">Add Category</a>
+    <form role="form" action="{{route('admin.image.store',['pid'=>$product->id])}}" method="post" enctype="multipart/form-data">
+        @csrf
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <label>Title:</label>
+                </div>
+                <div class="col-md-6">
+                    <label><input class="form-control" name="title" placeholder="Title"></label>
+                </div>
+                <div class="col-md-4">
+                    <input type="file" name="image">
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
             </div>
-            <!--End Page Header -->
         </div>
+    </form>
+
+    <div >
+
+
 
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <i class="fa fa-bar-chart-o fa-fw"></i>Category List
+                <h3 style="text-align:center;">Product Image List</h3>
             </div>
 
             <div class="panel-body">
@@ -28,31 +43,26 @@
                                 <thead>
                                 <tr>
                                     <th style="width: 10px">Id</th>
-                                    <th>parent</th>
+
                                     <th>Title</th>
                                     <th>Image</th>
-                                    <th>status</th>
-                                    <th style="width: 40px">Edit</th>
+                                    <th style="width: 40px">Update</th>
                                     <th style="width: 40px">Delete</th>
-                                    <th style="width: 40px">Show</th>
+
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach( $data as $rs)
+                                @foreach( $images as $rs)
                                 <tr>
                                     <td>{{$rs->id}}</td>
-                                    <td>{{\App\Http\Controllers\AdminPanel\CategoryController::getParentsTree($rs, $rs->title)}}</td>
                                     <td>{{$rs->title}}</td>
                                     <td>
                                         @if($rs->image)
-                                        <img src="{{Storage::url($rs->image)}}" style="height: 40px">
+                                        <img src="{{Storage::url($rs->image)}}" style="height: 100px">
                                         @endif
                                     </td>
-                                    <td>{{$rs->status}}</td>
-                                    <td><a href="{{route('admin.category.edit',['id'=>$rs->id])}}" class="btn btn-info btn-sm">Edit</a></td>
-                                    <td><a href="{{route('admin.category.destroy',['id'=>$rs->id])}}" class="btn btn-danger btn-sm"
+                                    <td><a href="{{route('admin.image.destroy',['pid'=>$product->id,'id'=>$rs->id])}}" class="btn btn-danger btn-sm"
                                             onclick="return confirm('Delete !! Are You Sure?')">Delete</a></td>
-                                    <td><a href="{{route('admin.category.show',['id'=>$rs->id])}}" class="btn btn-success btn-sm">Show</a></td>
                                 </tr>
                                 @endforeach
 

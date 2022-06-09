@@ -18,25 +18,7 @@
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <i class="fa fa-bar-chart-o fa-fw"></i>Product List
-                <div class="pull-right">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                            Actions
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu pull-right" role="menu">
-                            <li><a href="{{route('admin.index')}}">Action</a>
-                            </li>
-                            <li><a href="{{route('admin.index')}}">Another action</a>
-                            </li>
-                            <li><a href="{{route('admin.index')}}">Something else here</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li><a href="{{route('admin.index')}}">Separated link</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+
             </div>
 
             <div class="panel-body">
@@ -52,6 +34,7 @@
                                     <th>Price</th>
                                     <th>Quantity</th>
                                     <th>Image</th>
+                                    <th>Image Gallery</th>
                                     <th>status</th>
                                     <th style="width: 40px">Edit</th>
                                     <th style="width: 40px">Delete</th>
@@ -70,6 +53,12 @@
                                         @if($rs->image)
                                         <img src="{{Storage::url($rs->image)}}" style="height: 40px">
                                         @endif
+                                    </td>
+                                    <td>
+                                        <a href="{{route('admin.image.index',['pid'=>$rs->id])}}"
+                                        onclick="return !window.open(this.href, '','top=50 left=100 width=1100, height=700')">
+                                        <img src="{{asset('assets')}}/admin/img/gallery.png" style="height: 40px">
+                                        </a>
                                     </td>
                                     <td>{{$rs->status}}</td>
                                     <td><a href="{{route('admin.product.edit',['id'=>$rs->id])}}" class="btn btn-info btn-sm">Edit</a></td>
