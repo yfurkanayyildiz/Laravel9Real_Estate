@@ -11,7 +11,7 @@
     <link href="{{asset('assets')}}/admin/plugins/pace/pace-theme-big-counter.css" rel="stylesheet" />
     <link href="{{asset('assets')}}/admin/css/style.css" rel="stylesheet" />
     <link href="{{asset('assets')}}/admin/css/main-style.css" rel="stylesheet" />
-
+    @yield("head")
 </head>
 <body>
 
